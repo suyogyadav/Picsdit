@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
                                             .startResolutionForResult((Activity) context1,
                                                     LOCATION_SETTINGS_REQUEST);
                                 } catch (IntentSender.SendIntentException e) {
+                                    e.printStackTrace();
                                 }
                                 break;
                             case LocationSettingsStatusCodes.SETTINGS_CHANGE_UNAVAILABLE:
