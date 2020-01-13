@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "890041548216",
+    "firebase_url": "https://picsedit-fab75.firebaseio.com",
+    "project_id": "picsedit-fab75",
+    "storage_bucket": "picsedit-fab75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890041548216:android:3614ec384240d67b00e34d",
+        "android_client_info": {
+          "package_name": "com.kernel.picsdit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "890041548216-f51g0n8si5gmn0i6qv1dhaeuaun2lvkk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kernel.picsdit",
+            "certificate_hash": "bb46cbcc0769ae66ab332869f39879f49501ed08"
+          }
+        },
+        {
+          "client_id": "890041548216-2dlrrigd3s7n405ph9i2invqktv18b8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUdtFfURZW61WHvGzYvRW1vzs0NdcGGgw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "890041548216-2dlrrigd3s7n405ph9i2invqktv18b8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

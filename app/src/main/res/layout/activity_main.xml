@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:elevation="10dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:title="@string/app_name"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="4">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mainimg" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4.5"
+            android:orientation="horizontal"
+            android:weightSum="9">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="#FB894D"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:onClick="OpenChooser">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:text="Photo Editor \n Tools"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="#2CC9B6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:onClick="OpenChooser">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Beauty"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:weightSum="9">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="#815CD0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:onClick="OpenChooser">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textColor="#FFFFFF"
+                        android:text="Frames"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="#F962A9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:onClick="OpenChooser">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textColor="#FFFFFF"
+                        android:text="College"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_margin="2dp"
+                    app:cardBackgroundColor="#6477F0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:onClick="OpenChooser">
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textColor="#FFFFFF"
+                        android:text="Themes"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+           <com.google.android.material.card.MaterialCardView
+               android:layout_margin="10dp"
+               app:cardBackgroundColor="#6CB0F9"
+               android:layout_weight="3"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:onClick="OpenChooser">
+
+               <TextView
+                   android:layout_gravity="center"
+                   android:textAlignment="center"
+                   android:textSize="15sp"
+                   android:textColor="#FFFFFF"
+                   android:text="Video Editor \n Tools"
+                   android:textStyle="bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:elevation="8dp"
+                android:backgroundTint="@color/colorPrimary"
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_camera"
+                app:layout_anchor="@id/bar"
+                android:onClick="openCamera"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
