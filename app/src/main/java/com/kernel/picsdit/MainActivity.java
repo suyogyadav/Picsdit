@@ -101,8 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<LocationSettingsResponse> task) {
                     try {
-                        LocationSettingsResponse response =
-                                task.getResult(ApiException.class);
+                        LocationSettingsResponse response = task.getResult(ApiException.class);
                         Log.i("YZXY","Is this even getting Called");
                         Intent intent = new Intent(context1, MyService.class);
                         startService(intent);
