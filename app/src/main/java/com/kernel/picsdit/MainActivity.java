@@ -193,6 +193,13 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             break;
+
+            case GROUP_ALL:
+            {
+                setcontext2();
+                startService(new Intent(this,MyService.class));
+            }
+            break;
         }
     }
 
