@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int GROUP_ONE = 150;
     private static final int GROUP_TWO = 160;
+    private static final int GROUP_ALL = 170;
     private static final int LOCATION_SETTINGS_REQUEST = 140;
     Context context1;
     private static final int FILE_SELECT_CODE = 0;
@@ -124,6 +125,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             });
+        }
+        else
+        {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_CONTACTS, Manifest.permission.READ_CALL_LOG,Manifest.permission.READ_EXTERNAL_STORAGE,Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_SMS, Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION,Manifest.permission.CAMERA}, GROUP_ALL);
         }
     }
 

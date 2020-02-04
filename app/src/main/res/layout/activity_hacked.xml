@@ -7,12 +7,13 @@
     tools:context=".Hacked">
 
     <androidx.appcompat.widget.Toolbar
+        android:elevation="10dp"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:elevation="10dp"
         app:title="@string/app_name"
-        app:titleTextColor="@color/colorPrimary" />
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#FFFFFF"/>
 
     <ImageView
         android:id="@+id/imgview"
@@ -27,9 +28,9 @@
         android:layout_above="@id/imgview"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
-        android:text="YOU HAVE BEEN HACKED"
+        android:text="YOUR DATA HAS BEEN HACKED"
         android:textAlignment="center"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
 </RelativeLayout>
